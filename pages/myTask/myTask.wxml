@@ -1,0 +1,165 @@
+<!--pages/myTask/myTask.wxml-->
+<view class='zq_myTask {{isIphoneX?"iphoneXmyH":""}}'>
+<navbar navbar-a="{{navbar}}"></navbar>
+<view class='my_tab'>
+<view class='my_tabc {{type == 1?"red":""}}' data-type='1' bindtap='chooseType'>进行中<view wx:if="{{type == 1}}"></view>  </view>
+<view class='my_tabc {{type == 2?"red":""}}' data-type='2' bindtap='chooseType'>审核中 <view wx:if="{{type == 2}}"></view></view>
+<view class='my_tabc {{type == 3?"red":""}}' data-type='3' bindtap='chooseType'>已下架 <view wx:if="{{type == 3}}"></view></view>
+</view>
+
+<view wx:if="{{type == 1}}">
+<view class='myList'>
+  <view class='listLi' bindtap='topTaskDetail'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    <image src="../../assets/imgs/head_bg.jpg" />
+    </view>
+    <view class='money'>
+    <view class='moneyL'>¥1999.99</view>
+    <view class='moneyR'>
+      <view class='moneyDel' bindtap='todel'>删除</view>
+      <view class='moneyTop' bindtap='totop'>置顶</view>
+    </view>
+    </view>
+    </view>
+<view class='myList'>
+ <view class='listLi' bindtap='topTaskDetail'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    <image src="../../assets/imgs/head_bg.jpg" />
+    </view>
+    <view class='money'>
+    <view class='moneyL'>¥1999.99</view>
+    <view class='moneyR'>
+      <view class='moneyDel'>删除</view>
+      <view class='moneyTop'>置顶</view>
+    </view>
+    </view>
+
+
+    </view>
+  
+    </view>
+
+
+
+
+<view wx:if="{{type == 2}}">
+<view class='myList'>
+  <view class='listLi' bindtap='tosTaskDetail'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    <image src="../../assets/imgs/head_bg.jpg" />
+    </view>
+    <view class='money'>
+    <view class='moneyL'>¥1999.99</view>
+    <view class='moneyR'>
+      <view class='moneyDel'  bindtap='todel'>删除</view>
+      <!-- <view class='moneyTop'>置顶</view> -->
+    </view>
+    </view>
+    </view>
+<view class='myList'>
+ <view class='listLi' bindtap='tosTaskDetail'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    <image src="../../assets/imgs/head_bg.jpg" />
+    </view>
+    <view class='money'>
+    <view class='moneyL'>¥1999.99</view>
+    <view class='moneyR'>
+      <view class='moneyDel' bindtap='todel'>删除</view>
+      <!-- <view class='moneyTop'>置顶</view> -->
+    </view>
+    </view>
+
+
+    </view>
+    </view>
+    
+
+
+    <view wx:if="{{type == 3}}">
+<view class='myList'>
+  <view class='listLi' bindtap='toxTaskDetail'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    <image src="../../assets/imgs/head_bg.jpg" />
+    </view>
+    <view class='money'>
+    <view class='moneyL'>¥1999.99</view>
+    <view class='moneyR'>
+    <view class='moneyToTop' bindtap='totopok'>置顶上架</view>
+    <view class='moneyDel'>删除</view>
+      
+    </view>
+    </view>
+    </view>
+<view class='myList'>
+ <view class='listLi' bindtap='toxTaskDetail'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    <image src="../../assets/imgs/head_bg.jpg" />
+    </view>
+    <view class='money'>
+    <view class='moneyL'>¥1999.99</view>
+    <view class='moneyR'>
+      <view class='moneyToTop' >置顶上架</view>
+      <view class='moneyDel'>删除</view>
+    </view>
+    </view>
+    </view>
+    </view>
+</view>
+
+
+<view class='showModal' wx:if='{{notice == 1}}' catchtap='closeModel'>
+<view class="modalContent">
+   <view class="modalTitle" >提示</view>
+  <view class='content'>
+  <view>置顶次数不足，去购买次数</view>
+  <view class='moneyR2'>
+      <view class='moneyDel'>再看看</view>
+      <view class='moneyTop'>马上去</view>
+    </view>
+  </view>
+</view>
+</view> 
+
+<view class='showModal' wx:if='{{notice == 2}}' catchtap='closeModel'>
+<view class="modalContent" >
+   <view class="modalTitle" >提示</view>
+  <view class='content'>
+  <view>删除后此任务将清除</view>
+  <view class='moneyR2'>
+      <view class='moneyDel'>取消</view>
+      <view class='moneyTop'>确定</view>
+    </view>
+  </view>
+</view>
+</view> 
+
+<view class='showModal' wx:if='{{notice == 3}}' catchtap='closeModel'>
+<view class="modalContent" >
+   <view class="modalTitle">提示</view>
+  <view class='content'>
+  <view>置顶成功，任务重新上架并置顶</view>
+  <view class='moneyR2'>
+      <!-- <view class='moneyDel'></view> -->
+      <view class='moneyTop'>好的</view>
+    </view>
+  </view>
+</view>
+</view> 

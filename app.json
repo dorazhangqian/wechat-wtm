@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/middle/middle",
+    "pages/mine/mine",
+    "pages/banner/banner",
+    "pages/seeTackList/seeTackList",
+    "pages/taskList/tackList",
+    "pages/myTask/myTask",
+    "pages/releaseTask/releaseTask",
+    "pages/task/task",
+    "pages/tasktab/tasktab",
+    "pages/coupon/coupon",
+    "pages/taskDetail/taskDetail",
+    "pages/articleImg/articleImg",
+    "pages/searchResult/searchResult",
+    "pages/pTaskDetail/pTaskDetail",
+    "pages/sTaskDetail/sTaskDetail",
+    "pages/xTaskDetail/xTaskDetail",
+    "pages/allType/allType"
+  ],
+  "window": {
+    "navigationStyle": "custom",
+    "backgroundColor": "#f7f7f7"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#979795",
+    "selectedColor": "#1c1c1b",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "抢红包",
+        "iconPath": "tabbarComponent/icon/icon_home_grab_red_envelope@2x.png",
+        "selectedIconPath": "tabbarComponent/icon/icon_home_grab_red_envelope_selected@2x.png"
+      },
+      {
+        "pagePath": "pages/coupon/coupon",
+        "text": "优惠券",
+        "iconPath": "tabbarComponent/icon/icon_coupon@2x.png",
+        "selectedIconPath": "tabbarComponent/icon/icon_coupon_selected@2x.png"
+      },
+      {
+        "pagePath": "pages/middle/middle",
+        "iconPath": "tabbarComponent/icon/icon_home_advertise.png",
+        "isSpecial": true
+      },
+      {
+        "pagePath": "pages/tasktab/tasktab",
+        "text": "任务",
+        "iconPath": "tabbarComponent/icon/icon_task@2x.png",
+        "selectedIconPath": "tabbarComponent/icon/icon_coupon2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "tabbarComponent/icon/icon_my@2x.png",
+        "selectedIconPath": "tabbarComponent/icon/icon_my_selected@2x.png"
+      }
+    ]
+  }
+}

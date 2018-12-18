@@ -1,0 +1,88 @@
+/* pages/allType/allType.wxss */
+/* navbarComponent/navbar.wxss */
+.zq_navbar{
+width:100%;
+height:126rpx;
+line-height:126rpx;
+color:#fff;
+font-size:36rpx;
+border-bottom:1px solid #f7f7f7;
+background-color: #7d2524;
+position: fixed;
+left:0;
+top:0;
+z-index:100;
+display: flex;
+align-items: flex-end
+}
+.zq_navbar .image{
+flex:1;
+height:86rpx;
+display: flex;
+align-items:center;
+}
+.zq_navbar image{
+ width:22rpx;
+ height:36rpx;
+ margin:0 30rpx;
+}
+.zq_navbar .text2 image{
+ width:36rpx;
+ height:22rpx;
+ margin:0 10rpx;
+
+}
+.zq_navbar .text2{
+  width:7rem;
+  height:86rpx;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex:1;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+.zq_navbar .text image{
+ width:28rpx;
+ height:30rpx;
+ margin:0 10rpx;
+}
+.zq_navbar .text{
+  flex:1;
+  height:86rpx;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  font-size:30rpx;
+}
+.iphoneX-topheight{
+    padding-top: 50rpx;
+}
+.zq_alltype{
+  margin-top:128rpx;
+}
+
+.listAll{
+  display: grid;
+  grid-template-columns:repeat(5, 1fr);
+  width:100%;
+}
+.listAll .listType{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:20rpx 0;
+}
+.listAll .listType view{
+  width:110rpx;
+  height:68rpx;
+  font-size:30rpx;
+  background-color: #e1e1e1;
+  color:#1e1e1e;
+  border-radius: 8rpx;
+  display:flex;
+  justify-content: center;
+  align-items: center
+}

@@ -1,0 +1,179 @@
+/* pages/myTask/myTask.wxss */
+.zq_myTask{
+  margin-top: 128rpx;
+}
+.my_tab{
+  width:100%;
+  height:100rpx;
+  display: flex;
+  background-color: #fff;
+  border-bottom: 1px solid #f7f7f7;
+}
+.my_tab .my_tabc{
+  flex:1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#666;
+  font-size:32rpx;
+  position: relative;
+}
+.my_tab view.red{
+   color:#EB5E47;
+}
+.my_tab .my_tabc view{
+position: absolute;
+bottom: -2rpx;
+left:50%;
+transform: translateX(-50%);
+height:4rpx;
+width:40rpx;
+border-radius: 2rpx;
+background-color: #EB5E47
+}
+.myList{
+  background-color: #fff;
+  padding:0 30rpx;
+  margin-top:10rpx;
+}
+.listLi,.listLi2{
+  display: flex;
+  width:100%;
+  padding:30rpx 0 ;
+  border-bottom:1px solid #e9e9e9;
+}
+.listLi2:last-child{
+  border:none;
+}
+.listLi view{
+  width:434rpx;
+}
+.listLi2  view{
+  width:100%;
+}
+.listLi text,.listLi2 text{
+  display: block;
+}
+.listLi .liTitle,.listLi2 .liTitle{
+ color:#222222;
+ font-size:32rpx;
+}
+.listLi .liTime,.listLi2 .liTime{
+  color:#c8c8c8;
+ font-size:24rpx;
+ margin-top:46rpx;
+}
+.listLi .liMoney,.listLi2 .liMoney{
+  color:#EB5E47;
+  font-size:34rpx;
+  margin:10rpx 0;
+}
+.listLi image{
+  width:220rpx;
+  height:160rpx;
+  border-radius: 26rpx;
+  margin-left:20rpx;
+}
+.money{
+  display: flex;
+  padding:20rpx 0;
+}
+.money .moneyL{
+  flex:1;
+  color:#EB5E47;
+  display: flex;
+  align-content: center
+}
+.money .moneyR{
+  flex:2;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30rpx;
+}
+.moneyR2{
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  font-size: 30rpx;
+  margin-top:54rpx;
+}
+.moneyR2 .moneyDel{
+  width:200rpx;
+  height:68rpx;
+  border-radius: 34rpx;
+  margin-right:48rpx;
+  background-color: #CCCCCC;
+  display: flex;
+  justify-content:center;
+  align-items: center
+}
+.moneyR2 .moneyTop{
+  width:200rpx;
+  height:68rpx;
+  border-radius: 34rpx;
+  background-color: #EB5E47;
+  display: flex;
+  justify-content:center;
+  align-items: center
+}
+.money .moneyR .moneyDel{
+  width:150rpx;
+  height:60rpx;
+  border-radius: 30rpx;
+  background-color: #CCCCCC;
+  display: flex;
+  justify-content:center;
+  align-items: center
+}
+.money .moneyR .moneyTop{
+  width:150rpx;
+  height:60rpx;
+  border-radius: 30rpx;
+  margin-left:26rpx;
+  background-color: #EB5E47;
+  display: flex;
+  justify-content:center;
+  align-items: center
+}
+.money .moneyR .moneyToTop{
+  width:150rpx;
+  height:60rpx;
+  border-radius: 30rpx;
+  margin-right:26rpx;
+  background-color: #EB5E47;
+  display: flex;
+  justify-content:center;
+  align-items: center
+}
+
+
+.showModal{
+  height:100%;
+  width:100%;
+  background-color: rgba(0, 0,0, 0.3);
+  position:fixed;
+  left:0;
+  bottom:0;
+  z-index:1000;
+  overflow: hidden;
+}
+.modalTitle{
+  color:#222;
+  font-size:50rpx;
+  padding:30rpx;
+  font-weight:bold;
+}
+.modalContent{
+  background-color: #fff;
+  width:580rpx;
+  height:330rpx;
+  margin:auto;
+  margin-top:481rpx;
+  border-radius: 12rpx;
+  text-align: center;
+}
+.modalContent .content{
+color:#222;
+font-size:28rpx;
+}

@@ -1,0 +1,3 @@
+<!--pages/tasktab/tasktab.wxml-->
+<text>pages/tasktab/tasktab.wxml</text>
+<tabbar tabbar="{{tabbar}}"></tabbar>

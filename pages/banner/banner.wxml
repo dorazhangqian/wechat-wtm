@@ -1,0 +1,24 @@
+<!--pages/banner/banner.wxml-->
+
+
+<view class="zq_content {{isIphoneX?'iphoneXmyH':''}}">
+<view class="zq_navbar {{isIphoneX?'iphoneX-topheight':''}}">
+<view class='arrowRight'>
+<image src='../../assets/imgs/list_back.png' bindtap='gobackZQ'/>
+</view>
+<text>{{navbar}}</text>
+</view>
+<!-- <navbar navbar-a="{{navbar}}"></navbar> -->
+<view class='title'>广告标题广广告标题广告标题</view> 
+<view class='time'>2018-10-01</view> 
+<view class='content'>消息内容消息内容消息内容消息内容消息内容
+消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容
+消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容
+消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容
+消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容
+消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容
+消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容
+消息内容消息内容消息内容消息内容消息内容消息内容消息内容消息内容
+消息内容</view>  
+<image src='../../assets/imgs/head_bg.jpg' />
+</view>

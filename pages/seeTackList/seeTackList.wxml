@@ -1,0 +1,55 @@
+<!--pages/task/task.wxml-->
+
+<view class='zq_task {{isIphoneX?"iphoneXmyH":""}}'>
+<navbar navbar-a="{{navbar}}"></navbar>
+<view class='zq_location'>
+<view class='position'></view>
+<view class='location'>
+<text  bindtap='changeState'>{{state == true ? '完成':'编辑'}}</text>
+</view>
+</view>
+<view class='listUl'>
+    <view class='myli'>
+      <checkbox wx:if='{{state == true}}' value="li1" checked="true" color='#fff' />
+      <view class='listLi'> 
+      <view>
+      <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+      <text class='liMoney'>¥19999</text>
+      <text class='liTime'>开始时间：2017-10-10</text>
+      </view>
+      <image src="../../assets/imgs/head_bg.jpg" />
+      </view>
+    </view>
+
+    <view class='myli'>
+      <checkbox wx:if='{{state == true}}' value="li1" checked="true" color='#fff' />
+      <view class='listLi'> 
+      <view>
+      <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+      <text class='liMoney'>¥19999</text>
+      <text class='liTime'>开始时间：2017-10-10</text>
+      </view>
+      <image src="../../assets/imgs/head_bg.jpg" />
+      </view>
+    </view>
+    <view class='myli'>
+      <checkbox wx:if='{{state == true}}' value="li1" checked="true" color='#fff' />
+      <view class='listLi'> 
+      <view>
+      <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+      <text class='liMoney'>¥19999</text>
+      <text class='liTime'>开始时间：2017-10-10</text>
+      </view>
+      <image src="../../assets/imgs/head_bg.jpg" />
+      </view>
+    </view>
+    </view>
+
+
+<view class='footerContent' wx:if='{{state == true}}'>
+<view class='footerContentL'><checkbox  value="li1" checked="{{false}}" color='#fff' />全选</view>
+<view class='footerContentR'>删除</view>
+</view>
+   </view>
+   
+

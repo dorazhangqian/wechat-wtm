@@ -1,0 +1,66 @@
+/* pages/banner/banner.wxss */
+page {
+  display: block;
+  min-height: 100%;
+  background-color: #fff;
+}
+.zq_content{
+  padding:36rpx;
+  margin-top:126rpx;
+  background-color:#FFF;
+  height:100%; 
+}.
+.zq_content .title{
+  font-size:34rpx;
+  color:#222
+}
+.zq_content .time{
+  font-size:24rpx;
+  color:#999;
+  margin-top:10rpx
+}
+.zq_content .content{
+  font-size:28rpx;
+  color:#666;
+  margin:36rpx 0;
+}
+.zq_content image{
+  width:100%;
+  height:420rpx;
+  border-radius: 26rpx;
+}
+
+.zq_navbar{
+width:100%;
+height:126rpx;
+line-height:126rpx;
+color:#222222;
+font-size:36rpx;
+border-bottom:1px solid #f7f7f7;
+background-color: #fff;
+position: fixed;
+left:0;
+top:0;
+z-index:100;
+display: flex;
+justify-content: flex-start;
+align-items: flex-end;
+}
+.zq_navbar image{
+ width:22rpx;
+ height:36rpx;
+ margin:0 30rpx;
+}
+.zq_navbar text{
+  height:86rpx;
+  line-height:86rpx;
+  width:322rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+.arrowRight{
+  height:86rpx;
+  display: flex;
+  align-items: center
+}

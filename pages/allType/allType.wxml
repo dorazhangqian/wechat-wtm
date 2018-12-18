@@ -1,0 +1,22 @@
+<!--pages/allType/allType.wxml-->
+<view class='zq_alltype {{isIphoneX?"iphoneXmyH":""}}'>
+<view class="zq_navbar {{isIphoneX?'iphoneX-topheight':''}} ">
+<view class='image'><image src='../../assets/imgs/icon_white_arrow_downward_2@2x.png' bindtap='gobackZQ'/></view>
+<view  class='text2'>所有分类<image src='../../assets/imgs/icon_white_arrow_downward@2x.png'/></view>
+<view class='text'>
+<image src='../../assets/imgs/local.png'/>全国</view>
+</view>
+
+ <view class='listAll'>
+ <block wx:for="{{type}}">
+ <view class='listType'>
+    <view>{{item}}</view>
+ </view>
+</block>
+
+ </view>
+
+
+
+
+</view>

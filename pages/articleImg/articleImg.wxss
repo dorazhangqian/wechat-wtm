@@ -1,0 +1,11 @@
+/* pages/articleImg/articleImg.wxss */
+.zq_img{
+  margin-top:126rpx;
+  padding:30rpx 0 0 30rpx;
+}
+.zq_img image{
+width:330rpx;
+height:260rpx;
+margin: 0 30rpx 30rpx  0;
+border-radius: 26rpx;
+}

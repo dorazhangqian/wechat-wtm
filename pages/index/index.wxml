@@ -1,0 +1,78 @@
+<!--index.wxml-->
+<view class='zq_index'>
+  <view class='zq_swiper {{isIphoneX ? "sHeight":""}} '>
+  <view class='zq_search'>
+  <view class='zq_select'>
+   <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">{{region[0]}}</view>
+    <image src='../../assets/imgs/icon_serach_city_down@2x.png'/>
+  </picker>
+   
+   </view>  
+  <view  class='zq_input' bindtap='tosearchResult'>
+    <image src='../../assets/imgs/icon_serach@2x.png'/> 
+    <input placeholder="搜索你想要的任务" />
+  </view>
+   </view>
+  <view class='zq_agreement' bindtap="showAgreement"> <image src='../../assets/imgs/home_menu.png'/>     用户协议</view>
+  <swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item bindtap='toBanner'>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+  </swiper>
+
+</view>
+   <view class='zq_list'>
+   <block wx:for="{{list}}">
+      <view>
+      <image src="{{item.img}}" />
+      <text>{{item.text}}</text>
+      </view>
+  </block>
+   </view>
+   <view class='zq_taskList'>
+    <view class='title'>任务列表</view>
+    <view class='listUl'>
+    <view class='listLi' bindtap='toTaskDetail'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liMoney'>¥19999</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    <image src="../../assets/imgs/head_bg.jpg" />
+    </view>
+    
+    <view class='listLi2' bindtap='toTaskDetail'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liMoney'>¥19999</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    </view>
+     <view class='listLi2' bindtap='toTaskDetail'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liMoney'>¥19999</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    </view>
+    
+    </view>
+   </view>
+<image class='zq_addIcon' bindtap='toreleaseTask' src="../../assets/imgs/btn_release@2x.png" />
+  <tabbar tabbar="{{tabbar}}"></tabbar>
+
+</view>
+
+<view class='showModal' wx:if='{{agreement}}' catchtap='closeModel'>
+<view class="modalContent" catchtap='showAgreement'>
+   <view class="modalTitle" catchtap='showAgreement'><text>《有事么》用户协议</text><image src='../../assets/imgs/home_pop_close.png' catchtap='closeModel' /></view>
+  <view class='content'>
+  <view>内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v</view>
+  <view>内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v内容简介v</view>
+  </view>
+</view>
+</view> 

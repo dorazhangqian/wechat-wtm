@@ -1,0 +1,7 @@
+<!--navbarComponent/navbar.wxml-->
+<!--  -->
+<view class="zq_navbar {{isIphoneX?'iphoneX-topheight':''}}">
+<view class='image'><image src='../assets/imgs/list_back.png' bindtap='gobackZQ'/></view>
+<text>{{navbarA}}</text>
+<view class='text'></view>
+</view>

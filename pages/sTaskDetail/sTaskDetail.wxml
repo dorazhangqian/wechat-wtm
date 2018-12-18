@@ -1,0 +1,27 @@
+<!--pages/taskDetail/taskDetail.wxml-->
+<view class='zq_taskDetail {{isIphoneX?"iphoneXmyH":""}}'>
+<navbar navbar-a="{{navbar}}"></navbar>
+<view class='content'>
+<view class='zq_article'>
+  <view class='type'><image  src="../../assets/imgs/icon_classify@2x.png" /> 分类名</view>
+  <view class='time'><image  src="../../assets/imgs/icon_time@2x.png" /> 2017-10-01 10：20</view>
+</view>
+<view class='article'>
+  <view class='title'>任务描述：</view>
+  <view>1、精准扶贫是关乎我国全面建成小康社会的重大举措，“十三五”规划指出，“农村贫困人口脱贫是全面建成小康社会最艰巨的任务”；</view>
+  <view>2、要打赢扶贫攻坚战，就必须实施精准扶贫。目前，精准扶贫已进入到了攻坚的关键时期；</view>
+  <view>3、精准扶贫是关乎我国全面建成小康社会的重大举措，“十三五”规划指出，“农村贫困人口脱贫是全面建成小康社会最艰巨的任务”；</view>
+  <view>4、要打赢扶贫攻坚战，就必须实施精准扶贫。目前，精准扶贫已进入到了攻坚的关键时期。</view>
+    <view class='articleImage'>  
+    <image src="../../assets/imgs/head_bg.jpg" />
+    <view class='imgNum' bindtap='toarticleImg'>3张</view>
+    </view>
+    <view class='city'>开始时间：2017-10-10 10:30:00</view>
+    <view class='city'>城市：成都市高新区天府软件园A区123号</view>
+    <view class='name'>联系人：李先森</view>
+</view>
+</view>
+<view class='footerContent'>
+删除
+</view>
+</view>

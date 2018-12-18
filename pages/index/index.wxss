@@ -1,0 +1,247 @@
+/**index.wxss**/
+.zq_index{
+  overflow-y: scroll;
+  padding-bottom:98rpx;
+}
+.zq_swiper{
+  width:100%;
+  height:358rpx;
+  position:relative;
+}
+.sHeight{
+  height:408rpx;
+}
+swiper{
+  height:100%;
+}
+swiper-item{
+  width:100%;
+  height:100%;
+}
+swiper-item image{
+  height:100%;
+  width:100%
+}
+.zq_agreement{
+  position:absolute;
+  right:0;
+  bottom:22rpx;
+  width:188rpx;
+  height:60rpx;
+  font-size:24rpx;
+  border:1px solid #587bca;
+  border-right:none;
+  border-top-left-radius: 30rpx;
+  border-bottom-left-radius: 30rpx;
+  color:#587bca;
+  background-color: #fff;
+  z-index:2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zq_agreement image{
+  height:32rpx;
+  width:28rpx;
+  margin-right:10rpx;
+}
+
+.zq_search{
+  position:absolute;
+  left:50%;
+  top:40%;
+  transform: translateX(-50%);
+  width:520rpx;
+  height:80rpx;
+  font-size:26rpx;
+  z-index:2;
+  background-color: #fff;
+  box-shadow: #ccc 0px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  padding:0 28rpx;
+}
+.picker{
+  width:80rpx;
+  text-align:center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: middle;
+}
+.zq_search .zq_input{
+  padding:0 14rpx;
+  display: flex;
+  align-items: center; 
+  border-left: 1px solid #d7d7d7;
+  margin-left:14rpx;
+}
+.zq_select{
+  width:122rpx;
+}
+.zq_select image{
+  height:14rpx;
+  width:24rpx;
+}
+.zq_search .zq_input image{
+  height:30rpx;
+  width:32rpx;
+  margin-right:14rpx;
+}
+/* .zq_search .zq_input input{
+
+
+} */
+.zq_list{
+  width:100%;
+  height:448rpx;
+  font-size:26rpx;
+  background-color:#fff;
+  display: grid;
+  grid-template-columns:repeat(5, 1fr);
+  grid-template-rows:repeat(3, 1fr);
+}
+.zq_list view{
+  text-align:center;
+}
+.zq_list image{
+  width:66rpx;
+  height:66rpx;
+  display: block;
+  margin:16rpx auto;
+}
+/* 用户协议 */
+.showModal{
+  height:100%;
+  width:100%;
+  background-color: rgba(0, 0,0, 0.3);
+  position:fixed;
+  left:0;
+  bottom:0;
+  z-index:1000;
+  overflow: hidden;
+}
+.modalTitle{
+  border-bottom:1px solid #ccc;
+  font-size:40rpx;
+  padding:30rpx;
+  position:relative;
+}
+.modalTitle image{
+  width:30rpx;
+  height:30rpx;
+  position:absolute;
+  right:30rpx;
+  top:45rpx;
+}
+.modalContent{
+  background-color: #fff;
+  width:660rpx;
+  height:1000rpx;
+  overflow-y: scroll;
+  margin:auto;
+  margin-top:168rpx;
+  border-radius: 14rpx;
+}
+.modalContent .content{
+padding:30rpx;
+color:#666;
+  font-size:28rpx;
+}
+.modalContent .content view{
+text-indent: 2em
+}
+
+/* 任务列表 */
+.zq_taskList{
+  width:100%;
+  background-color:#fff;
+  margin-top:20rpx;
+}
+.zq_taskList .title{
+  width:100%;
+  text-align: center;
+  font-size:28rpx;
+  border-bottom: 1px solid #e9e9e9;
+  padding:30rpx 0;
+  position: relative; 
+}
+.zq_taskList .title:before, .zq_taskList .title:after { 
+    content: ''; 
+    position: absolute;   
+    top: 50%; 
+    background: #e9e9e9;  
+    width:114rpx;           
+    height: 2rpx;  
+} 
+.zq_taskList .title:before{
+  left:186rpx;
+}
+.zq_taskList .title:after{
+  right:186rpx;
+}
+.listUl{
+  padding:0 30rpx;
+}
+.listLi,.listLi2{
+  display: flex;
+  width:100%;
+  padding:30rpx 0 ;
+  border-bottom:1px solid #e9e9e9;
+}
+.listLi view{
+  width:434rpx;
+}
+.listLi2  view{
+  width:100%;
+}
+.listLi text,.listLi2 text{
+  display: block;
+}
+.listLi .liTitle,.listLi2 .liTitle{
+ color:#222222;
+ font-size:32rpx;
+}
+.listLi .liTime,.listLi2 .liTime{
+  color:#c8c8c8;
+ font-size:24rpx;
+}
+.listLi .liMoney,.listLi2 .liMoney{
+  color:#EB5E47;
+ font-size:34rpx;
+ margin:10rpx 0;
+}
+.listLi image{
+  width:220rpx;
+  height:160rpx;
+  border-radius: 26rpx;
+  margin-left:20rpx;
+}
+/* 添加icon */
+.zq_addIcon{
+  width:140rpx;
+  height:140rpx;
+  z-index:10;
+  position: fixed;
+  right:10rpx;
+  bottom:150rpx;
+}
+
+/* 单个指示点样式 */
+.zq_swiper .wx-swiper-dot{
+    display: inline-flex;
+    justify-content:space-between;
+}
+/* 此类必须有，伪元素 */
+.zq_swiper .wx-swiper-dot::before{
+    content: ''; 
+    flex-grow: 1;
+    background-color: #D2D2D2;
+}
+/* 当前指示点样式 */
+.zq_swiper .wx-swiper-dot-active::before{
+    background-color: #EB5E47;
+    border-radius: 50%;
+}

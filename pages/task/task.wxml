@@ -1,0 +1,100 @@
+<!--pages/task/task.wxml-->
+
+<view class='zq_task {{isIphoneX?"iphoneXmyH":""}}'>
+<navbar navbar-a="{{navbar}}"></navbar>
+<view class='zq_location'>
+<view class='position' bindtap='showType'> {{position}} <image src='../../assets/imgs/icon_serach_city_down@2x.png'/></view>
+<view class='location'>
+<image src='../../assets/imgs/icon_city_positioning@2x.png'/>
+{{location}}
+</view>
+</view>
+<view class='typeList  {{isIphoneX?"typeListH":""}} ' wx:if="{{showList}}" catchtap='closeTypeList'>
+<view class='zq_location'>
+<view class='position' bindtap='showType'> {{position}} <image src='../../assets/imgs/arrowtop.png'/></view>
+<view class='location'>
+<image src='../../assets/imgs/icon_city_positioning@2x.png'/>
+{{location}}
+</view>
+</view>
+<view class='list'>
+<view><view class='red'>保安</view></view>
+<view><view>瑜伽</view></view>
+<view><view>司机</view></view>
+<view><view>老师</view></view>
+<view><view>翻译</view></view>
+<view><view>搬家</view></view>
+<view><view>计算机</view></view>
+<view><view>维修</view></view>
+<view><view>杂工</view></view>
+<view><view>财会</view></view>
+<view><view>风水</view></view>
+<view><view>化妆</view></view>
+
+</view>
+
+
+</view>
+
+
+
+<view class='listUl'>
+    <view class='listLi'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liMoney'>¥19999</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    <image src="../../assets/imgs/head_bg.jpg" />
+    </view>
+
+    <view class='listLi'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liMoney'>¥19999</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    <image src="../../assets/imgs/head_bg.jpg" />
+    </view>
+
+    <view class='listLi'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liMoney'>¥19999</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    <image src="../../assets/imgs/head_bg.jpg" />
+    </view>
+    
+    
+    <view class='listLi2'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liMoney'>¥19999</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    </view>
+
+     <view class='listLi2'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liMoney'>¥19999</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    </view>
+
+     <view class='listLi2'>
+    <view>
+    <text class='liTitle'>任务标题任务标题任务标题任务标题任务标题任务</text>
+    <text class='liMoney'>¥19999</text>
+    <text class='liTime'>开始时间：2017-10-10</text>
+    </view>
+    </view>
+    
+    </view>
+   </view>
+   <view  class='isBottom'>
+   <text>已经到底了</text>
+   </view>
+   
+

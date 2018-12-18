@@ -1,0 +1,46 @@
+/* navbarComponent/navbar.wxss */
+.zq_navbar{
+width:100%;
+height:126rpx;
+line-height:126rpx;
+color:#222222;
+font-size:36rpx;
+border-bottom:1px solid #f7f7f7;
+background-color: #fff;
+position: fixed;
+left:0;
+top:0;
+z-index:100;
+display: flex;
+align-items: flex-end
+}
+.zq_navbar .image{
+flex:1;
+height:86rpx;
+display: flex;
+align-items:center;
+}
+.zq_navbar .image image{
+ width:22rpx;
+ height:36rpx;
+ margin:0 30rpx;
+}
+.zq_navbar text{
+  width:7rem;
+  height:86rpx;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex:1;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+.zq_navbar .text{
+  flex:1;
+}
+
+.iphoneX-topheight{
+    padding-top: 50rpx;
+}

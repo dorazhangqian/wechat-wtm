@@ -1,0 +1,11 @@
+<!--pages/articleImg/articleImg.wxml-->
+<view class='zq_img {{isIphoneX?"iphoneXmyH":""}}'>
+ <navbar navbar-a="{{navbar}}"></navbar>
+<image src="../../assets/imgs/head_bg.jpg" />
+<image src="../../assets/imgs/head_bg.jpg" />
+<image src="../../assets/imgs/head_bg.jpg" />
+<image src="../../assets/imgs/head_bg.jpg" />
+<image src="../../assets/imgs/head_bg.jpg" />
+
+
+</view>

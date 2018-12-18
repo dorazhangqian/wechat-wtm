@@ -1,0 +1,30 @@
+/* pages/taskList/tackList.wxss */
+page {
+  display: block;
+  min-height: 100%;
+  background-color: #fff;
+}
+.zq_taskList{
+  margin-top: 128rpx;
+  font-size:32rpx;
+}
+.zq_taskList .content{
+  text-align: center;
+}
+.zq_taskList image{
+  width:192rpx;
+  height:164rpx;
+  margin-top:138rpx;
+  margin-bottom:24rpx;
+}
+.seeBtn{
+  width:690rpx;
+  height:86rpx;
+  background-color: #EB5E47;
+  color:#fff;
+  font-size:34rpx;
+  border-radius: 44rpx;
+  line-height: 86rpx;
+  margin: auto;
+  margin-top:130rpx;
+}

@@ -1,0 +1,9 @@
+<!--pages/taskList/tackList.wxml-->
+<view class='zq_taskList {{isIphoneX?"iphoneXmyH":""}}'>
+<navbar navbar-a="{{navbar}}"></navbar>
+<view class='content'>
+<image src='../../assets/imgs/img_null@2x.png'/>
+<view>没有记录</view>
+<view class='seeBtn'>查看任务</view>
+</view>
+</view>
